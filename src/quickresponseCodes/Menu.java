@@ -1,5 +1,8 @@
 package quickresponseCodes;
 
+import quickresponseCodes.frames.CreationFrame;
+import quickresponseCodes.frames.ReadingFrame;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +23,7 @@ public class Menu {
     private ImageIcon background;
     private Image img,temp;
 
-    Menu(){
+    private Menu(){
         frame=new JFrame("QR CODES");
         frame.addWindowListener(new WindowAdapter() {
             @Override
